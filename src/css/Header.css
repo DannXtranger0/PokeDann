@@ -1,0 +1,122 @@
+.header{
+    background-color: var(--primary-color);
+    padding: 2vh 0;
+}
+
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    flex-wrap: wrap;   
+    justify-items: center;
+
+    gap: 2vh 0;
+    
+    & .header-bottom{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+
+        & input[type="text"]{
+            margin-right: 5vw;
+            width: 60%;
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: none;
+            font-size: .9rem;
+            outline: none;
+        }
+    }
+}
+
+.about-me{
+    flex: 1;
+    & a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white-color)  ;
+    }
+    
+}
+
+.logo-container{
+    flex: 1;
+    text-align: right;
+    & img{
+        width: 70%;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
+
+.search{
+    background-image: url('../assets/search.svg'); ;
+    background-size:  70%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+@media(min-width:768px){
+   .header-bottom{
+        & input[type="text"]{
+            font-size: 1.1rem !important;
+        }
+   }
+    .about-me{
+        font-size: 1.2rem !important;
+        font-weight: 600;
+    }
+    .logo-container{
+        & img{
+            width: 26vw !important;
+        }
+    }
+
+    .search{
+        width: 7vw !important;
+        height: 6vh !important;
+        background-size: 40%;
+    }
+}
+
+@media(min-width: 1024px) {
+    .header-container{
+        padding: 0 5vw;
+        flex-wrap: nowrap;
+    }
+
+    .header-bottom{
+        order: 2;
+        & input[type="text"]{
+            font-size: 1.1rem !important;
+            margin-right: 3vw !important;
+        }
+   }
+
+   .about-me{
+    font-size: 1.1rem !important;
+    order: 3;
+    & a{
+    width: 100px;
+
+}
+}
+
+    .logo-container{
+        order: 1;
+        & img{
+            width: 16vw !important;
+        }
+    }
+
+    .search{
+        width: 6vw !important;
+        height: 6vh !important;
+        background-size: 40%;
+    }
+}

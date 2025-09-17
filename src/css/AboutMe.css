@@ -1,0 +1,148 @@
+.about-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 2vh;
+}
+
+.about-container{
+    background-color: var(--primary-color);
+    padding: 2vh 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    border: solid var(--primary-color);
+
+    & p{
+        font-weight: 600;
+        font-size: .9rem;
+        color: var(--white-color);
+    }
+
+    & span{
+        color: var(--electric-type-color);
+    }
+}
+
+.about-container:nth-child(1) {
+    border-radius: 5px 5px 0 0 ;
+}
+.about-container:nth-child(2) {
+    border-radius:  0 0 5px 5px ;
+}
+
+
+
+.image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: var(--white-color);
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    & img{
+        width: 60vw;
+        height: 60vh;
+        margin-bottom: 10vw;
+        margin-left: 10vw;
+        object-fit: contain;
+    }
+}
+
+.buttons-types-container{
+    display: none;
+}
+
+.buttons-container{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    & a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        background-color: var(--electric-type-color);
+        border-radius: 5px;
+        height: 7vh;
+        color: var(--black-color);
+        font-weight: 700;
+
+        &:hover{
+            filter: brightness(1.2);
+        }
+    }
+}
+
+
+@media(min-width:768px){
+.image-container{
+    & img{
+        margin-bottom: 10vw;
+        margin-left: 5vw;
+    }
+}
+
+.about-container{
+    gap: 3vh;
+    & p{
+        padding: 0 10vw;
+        font-size: 1rem;
+    }
+}
+}
+
+@media(min-width:1024px){
+    .about-wrapper{
+        flex-direction: row;
+        gap: 5vw;
+        flex: 1;
+        align-items: center;
+        height: 76vh;
+    }
+
+    .about-container{
+
+        height: 70vh;
+        flex: 1;  
+        border-radius: 5px;
+        & p{
+            padding: 0;
+            font-size: 1.2rem;
+        }
+
+    }
+
+    .image-container{
+        
+        & img{
+        height: 45vh;
+
+        margin-bottom: 5vw;
+        margin-left: 4vw;
+    }
+}
+
+
+.about-container:nth-child(1) {
+    border-radius: 5px  ;
+}
+.about-container:nth-child(2) {
+    border-radius:  5px ;
+}
+
+
+    .buttons-types-container{
+        display: flex;
+        gap: 2vw;
+        & button{
+            width: 10vw;
+            font-size: 1.2rem;
+        }
+
+    }
+}

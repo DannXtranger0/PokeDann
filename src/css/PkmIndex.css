@@ -1,0 +1,49 @@
+.side-menu{
+    background-color: var(--primary-color);
+    width: 50%;
+    height: 100vh;
+    transition: all 0.3s ease-in-out;
+    position: fixed ;
+    left: -100%;
+
+}
+.side-menu-visible{
+        left: 0;
+}
+.menu-title{
+    color: white;
+    text-align: center;
+    padding: 2vh 0;
+    font: var(--font-mb-sm-title);
+    font-weight: var(--font-weight-title);
+}
+
+.types-container{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.pkms-container{
+    margin: 15px 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    gap: 5vh;
+    column-gap: 0;
+}
+
+.pkm-card-div-container{
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    justify-content: center;  
+}
+
+
+@media(min-width: 1024px) {
+    .pkms-container{
+        grid-template-columns: repeat(3,1fr);
+
+    }
+}

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+:root{
+  --primary-color: #A53D42;
+  --secondary-color: #CEDC61;
+  --white-color: #F1F1F1;
+  --black-color: #1E1E1E;
+
+  --font-mb-sm-title: 1rem;
+  --font-weight-title:700;
+  --font-weight-text: 600;
+  --font-size-h3: 1.4rem;
+
+
+
+  --sm: 400px;
+  --md: 768px;
+  --lg: 1024px;
+  --xl: 1280px;
+
+  --psychic-type-color: #C057D3;
+  --ground-type-color: #BC8B4F;
+  --normal-type-color: #8F8F8F;
+  --fire-type-color: #E8944B;
+  --grass-type-color: #5DC149;
+  --water-type-color: #4973C1;
+  --poison-type-color: #9A3A9F;
+  --dark-type-color: #6A4E3D;
+  --electric-type-color: #CEDC61;
+  --fighting-type-color: #A53D42;
+  --dragon-type-color: #494f8e;
+  --bug-type-color: #8CDC7C;
+  --flying-type-color: #87b0fb;
+  --ghost-type-color: #355183;
+  --rock-type-color: #7F5E34;
+  --fairy-type-color: #E592F4;
+  --steel-type-color: #cfcfcf;
+  --ice-type-color: #b9dffe;
+
+}
+
+body{
+  font-family: 'Nunito Sans', sans-serif;  
+  background-color: var(--white-color);
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  width: 40px;
+  height: 35px;
+
+
+  &:hover{
+    cursor: pointer;
+    background-color: #F0FB9B;
+  }
+}
+
+
+
+  .btn-type{
+    border: none;
+    height: 35px;
+    width: 85px;
+    border-radius: 5px;
+    border: 1.5px solid var(--black-color);
+    font-size: .9rem;
+    font-weight: 700;
+    background-color: --var(--type-color,--primary-color);
+    font-family: 'Nunito Sans', sans-serif;
+    &:hover{
+        cursor: pointer;
+        filter: brightness(1.2);
+    }
+}
