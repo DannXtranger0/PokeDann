@@ -49,3 +49,9 @@
     font-weight: var(--font-weight-text);
     align-self: start;
 }
+
+@media(min-width:1020px){
+  .pkm-name{
+    font-size: 1.6rem;
+  }
+}
