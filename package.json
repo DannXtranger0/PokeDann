@@ -1,4 +1,5 @@
 {
+   "homepage": "https://DannXtranger.io/PokeDann",
   "name": "poke-dann",
   "private": true,
   "version": "0.0.0",
@@ -7,8 +8,11 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
+        "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
+   
+
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
